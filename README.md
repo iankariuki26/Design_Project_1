@@ -118,8 +118,8 @@ For the numerical features in this dataset, specifically the `rating` column, th
 
 
 
-#Press Release:
+# Press Release:
 
-#**Beyond Blockbuster: Recommendation Algorithm Unlocks New Cinema Experience!**
+# **Beyond Blockbuster: Recommendation Algorithm Unlocks New Cinema Experience!**
 
 [Click here to read the full Press Release](./Press_Release.md)
