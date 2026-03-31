@@ -81,3 +81,10 @@ The selection of specific rating thresholds and data formats constituted the pri
 - **The "Significance Threshold" (Lower Bound = 50):** A critical decision was made to set a lower bound of 50 ratings for any film to be included in the "Hidden Gem" subset. This choice was based on the need to mitigate sampling uncertainty. In MovieLens, movies with fewer than 50 ratings often suffer from high Standard Error of the Mean (SEM), where a single 5-star or 1-star rating can disproportionately skew the average. By requiring 50 interactions, I ensured that the "High Quality" status (Avg > 4.0) is backed by a statistically significant consensus rather than a handful of biased outliers.
 - **The "Popularity Ceiling" (Upper Bound = 500):** Setting an upper bound of 500 ratings was a strategic decision to define the "Discovery Zone." While films with 10,000+ ratings are statistically more "certain," they represent mainstream hits that do not require a specialized recommendation engine for discovery. Capping the dataset at 500 ratings forces the SVD model to focus on the Long-Tail of the distribution, ensuring the final output provides true "under-the-radar" content rather than reinforcing existing popularity loops.
 - **Architectural Choice (DuckDB & Parquet):** I elected to use DuckDB for the transformation pipeline and Parquet for the final storage. DuckDB was chosen for its ability to perform high-speed SQL joins on the 600MB+ raw ratings.csv file without the memory overhead of standard Pandas. Exporting the result to Parquet preserves strict data typing and provides the compression necessary to handle the "Scale" requirements of the project while maintaining high performance for the downstream modeling script.
+
+
+
+## Metadata
+
+### **Schema:**
+![Logical ER Diagram](./images/erd_diagram.png) 
