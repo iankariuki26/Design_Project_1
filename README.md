@@ -92,10 +92,10 @@ The selection of specific rating thresholds and data formats constituted the pri
 ### Data Table:
 | Table Name | Description | Link to File |
 | :--- | :--- | :--- |
-| **`movies`** | Core metadata for filtered "Hidden Gems" (Avg > 4.0, Count 50-500). | [movies.parquet](./movies.parquet) |
-| **`ratings`** | User-item interaction scores specifically for the filtered subset of movies. | [ratings.parquet](./ratings.parquet) |
-| **`tags`** | Crowdsourced metadata and descriptors for the filtered movies. | [tags.parquet](./tags.parquet) |
-| **`links`** | Mapping table to external identifiers (IMDB/TMDB) for extended metadata. | [links.parquet](./links.parquet) |
+| **`movies`** | Core metadata for filtered "Hidden Gems" (Avg > 4.0, Count 50-500). | [movies.parquet](https://myuva-my.sharepoint.com/:x:/g/personal/epj7rf_virginia_edu/IQDAWRB5Jl9hTImDHC60oy3GAd2GSvFOHodbRcJaZm4K4pE?e=ntSulS) |
+| **`ratings`** | User-item interaction scores specifically for the filtered subset of movies. | [ratings.parquet](https://myuva-my.sharepoint.com/:x:/g/personal/epj7rf_virginia_edu/IQC23APpvGYoRbrJKEqU2EyKAaKoeQ-VeN0aHSmOxuVqvbg?e=SJ5J3R) |
+| **`tags`** | Crowdsourced metadata and descriptors for the filtered movies. | [tags.parquet](https://myuva-my.sharepoint.com/:x:/g/personal/epj7rf_virginia_edu/IQA8apqkNWXSQ5gpULL0nEyBARlNxnI2h9o-Kmy7lqGsxgU?e=xzgKTi) |
+| **`links`** | Mapping table to external identifiers (IMDB/TMDB) for extended metadata. | [links.parquet](https://myuva-my.sharepoint.com/:x:/g/personal/epj7rf_virginia_edu/IQBQk54Qz5-pQIkE3NnWxz6SAbDt9fTMFWkQMChW4DtsynQ?e=OOZZum) |
 
 ### Data Dictionary:
 | Name | Data Type | Description | Example |
