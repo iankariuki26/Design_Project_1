@@ -87,4 +87,4 @@ The selection of specific rating thresholds and data formats constituted the pri
 ## Metadata
 
 ### **Schema:**
-![Logical ER Diagram](./images/erd_diagram.pdf) 
+![Logical ER Diagram](./images/ERD_image.png) 
