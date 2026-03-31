@@ -88,3 +88,30 @@ The selection of specific rating thresholds and data formats constituted the pri
 
 ### **Schema:**
 ![Logical ER Diagram](./images/ERD_image.png) 
+
+### Data Table:
+| Table Name | Description | Link to File |
+| :--- | :--- | :--- |
+| **`movies`** | Core metadata for filtered "Hidden Gems" (Avg > 4.0, Count 50-500). | [movies.parquet](./movies.parquet) |
+| **`ratings`** | User-item interaction scores specifically for the filtered subset of movies. | [ratings.parquet](./ratings.parquet) |
+| **`tags`** | Crowdsourced metadata and descriptors for the filtered movies. | [tags.parquet](./tags.parquet) |
+| **`links`** | Mapping table to external identifiers (IMDB/TMDB) for extended metadata. | [links.parquet](./links.parquet) |
+
+### Data Dictionary:
+| Name | Data Type | Description | Example |
+| :--- | :--- | :--- | :--- |
+| `movieId` | Integer | Unique identifier for each film in the MovieLens system. | `1358` |
+| `userId` | Integer | Unique identifier for the user providing the rating or tag. | `450` |
+| `rating` | Float | Numerical score on a 5-star scale (0.5 increments). | `4.5` |
+| `timestamp` | BigInt | Seconds since midnight UTC, January 1, 1970. | `1260759144` |
+| `tag` | String | User-submitted descriptive keyword or metadata for a movie. | `"atmospheric"` |
+| `title` | String | The full title of the movie, including the release year. | `Inception (2010)` |
+| `imdbId` | Integer | Seven-digit identifier for the movie on IMDb.com. | `0114709` |
+| `tmdbId` | Integer | Unique identifier for the movie on TheMovieDB.org. | `862` |
+
+**Quantification of Uncertainty:**
+For the numerical features in this dataset, specifically the `rating` column, the following sources of uncertainty must be accounted for, recieved some help from gemini with writing this:
+
+1.  **Subjective Variance:** Ratings are non-objective measurements. A "4.0" from a critical user may be equivalent to a "5.0" from a lenient user. We quantify this by calculating the **Standard Deviation ($\sigma$)** for each movie. A higher $\sigma$ indicates greater disagreement among users, increasing the uncertainty of that movie's "Hidden Gem" status.
+2.  **Sampling Error (Standard Error of the Mean):** Since "Hidden Gems" are defined by having a lower volume of ratings (50–500), the average rating is more susceptible to outliers. The uncertainty is quantified using the formula $SEM = \frac{\sigma}{\sqrt{n}}$. As the number of ratings ($n$) decreases, the uncertainty regarding the "true" quality of the film increases.
+3.  **Temporal Decay:** Preferences captured in the `timestamp` field introduce uncertainty over time. A high rating from 1998 carries a "recency uncertainty" compared to a rating from 2024, as cultural standards and individual tastes shift over decades.
