@@ -61,9 +61,9 @@ This dataset was constructed using the MovieLens 25M dataset, which is a profess
 
 | File Name | Description | Link to Code |
 | :--- | :--- | :--- |
-| `database_manager.py` | A wrapper class for **DuckDB** that implements the required **Error Handling** and **Logging** to `pipeline.log`. | [Link to Repo](./src/database_manager.py) |
-| `data_pipeline.py` | The core transformation script that joins raw CSVs, filters for "Hidden Gems," and exports the 4-table relational model to **Parquet**. | [Link to Repo](./src/data_pipeline.py) |
-| `pipeline_check.py` | A validation script used to query the final database and display the top 5 results to ensure the pipeline logic is sound. | [Link to Repo](./src/pipeline_check.py) |
+| `database_manager.py` | A wrapper class for **DuckDB** that implements the required **Error Handling** and **Logging** to `pipeline.log`. | [#](./src/database_manager.py) |
+| `data_pipeline.py` | The core transformation script that joins raw CSVs, filters for "Hidden Gems," and exports the 4-table relational model to **Parquet**. | [#](./src/data_pipeline.py) |
+| `pipeline_check.py` | A validation script used to query the final database and display the top 5 results to ensure the pipeline logic is sound. | [#](./src/pipeline_check.py) |
 
 
 ### Bias Identification:
