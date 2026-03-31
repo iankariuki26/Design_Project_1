@@ -115,3 +115,11 @@ For the numerical features in this dataset, specifically the `rating` column, th
 1.  **Subjective Variance:** Ratings are non-objective measurements. A "4.0" from a critical user may be equivalent to a "5.0" from a lenient user. We quantify this by calculating the **Standard Deviation ($\sigma$)** for each movie. A higher $\sigma$ indicates greater disagreement among users, increasing the uncertainty of that movie's "Hidden Gem" status.
 2.  **Sampling Error (Standard Error of the Mean):** Since "Hidden Gems" are defined by having a lower volume of ratings (50–500), the average rating is more susceptible to outliers. The uncertainty is quantified using the formula $SEM = \frac{\sigma}{\sqrt{n}}$. As the number of ratings ($n$) decreases, the uncertainty regarding the "true" quality of the film increases.
 3.  **Temporal Decay:** Preferences captured in the `timestamp` field introduce uncertainty over time. A high rating from 1998 carries a "recency uncertainty" compared to a rating from 2024, as cultural standards and individual tastes shift over decades.
+
+
+
+#Press Release:
+
+#**Beyond Blockbuster: Recommendation Algorithm Unlocks New Cinema Experience!**
+
+[Click here to read the full Press Release](./Press_Release.md)
