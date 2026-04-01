@@ -11,4 +11,5 @@ Today’s media landscape suffers from a "Paradox of Choice": the more options w
 Our solution is a next-generation recommendation engine that combines the power of massive data analysis with personalized mathematical modeling. By analyzing over 32 million movie interactions, our system identifies patterns in what viewers truly value beyond just the "hype." Instead of just looking at what is popular, the engine builds a digital profile of your specific cinematic preferences, like your favorite pacing, themes, and genres. It then cross-references your profile against thousands of "Hidden Gems" to surface high-quality movies you’ve likely never heard of but are guaranteed to love. It’s not just a list of movies, but a personalized map to the best of modern cinema, designed to end the "infinite scroll" forever.
 
 ## Chart:
+![model_output](./images/model_output.png) 
 
