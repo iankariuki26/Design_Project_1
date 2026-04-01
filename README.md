@@ -8,7 +8,7 @@
 ## NetID - epj7rf
 ## DOI:
 ## Press Release
-## Pipeline - [code](./src)
+## Pipeline - [code](./src/table_creation)
 ## Data - Link to [Data](https://myuva-my.sharepoint.com/:f:/g/personal/epj7rf_virginia_edu/IgDgizg3gX6kSKUWdS6rofbxAaAqdjWAfW_e1fLPaNDECgk?e=fm8Kxz)
 ## License - [MIT](https://github.com/iankariuki26/Design_Project_1?tab=MIT-1-ov-file#readme)
 
