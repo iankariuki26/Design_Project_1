@@ -26,7 +26,7 @@
 There exists a need to solve "popularity bias" which is a prevelant failure in basic algorithms where popular content tends to drown out high-quiality niche content. My refining of this problem allows focus on "hidden gems" by requireing a relation schema that is able to perform sql aggregations before passing the data thorugh a SVD model. I will utilize the strengths of DuckDB for heavy data manipulation and scikit-learn for predictive modeling.
 
 ## Motivation
-The primary motivation in this project stems from personal interest in high-quality cinmea and the subsequent frustration with the "paradox of choice" that is presented throughout
+The primary motivation for this project is rooted in a personal passion for high-quality cinema and a recurring frustration with the "paradox of choice" inherent in modern streaming environments. While massive datasets like MovieLens 25M offer a wealth of content, the sheer volume of available titles often leads to decision paralysis, where the discovery of meaningful, niche films is obscured by a bias toward mainstream blockbusters. By leveraging Matrix Factorization and DuckDB, this project seeks to engineer a "Hidden Gems" pipeline that cuts through the noise of over-saturated catalogs. The goal is to move beyond generic popularity metrics and utilize latent feature modeling to identify high-caliber, low-visibility cinema, effectively transforming a overwhelming data surplus into a curated, personalized discovery system.
 
 
 ## Domain Exposition
