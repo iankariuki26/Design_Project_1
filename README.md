@@ -6,7 +6,7 @@
 
 ## Name - Ian Kariuki
 ## NetID - epj7rf
-## DOI: [doi](https://github.com/iankariuki26/Design_Project_1/releases/tag/doi_p1)
+## DOI: [link](https://github.com/iankariuki26/Design_Project_1/releases/tag/doi_p1)
 ## Press Release
 ## Pipeline - [code](./src/table_creation)
 ## Data - Link to [Data](https://myuva-my.sharepoint.com/:f:/g/personal/epj7rf_virginia_edu/IgDgizg3gX6kSKUWdS6rofbxAaAqdjWAfW_e1fLPaNDECgk?e=fm8Kxz)
