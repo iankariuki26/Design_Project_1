@@ -19,11 +19,11 @@
 ## **General and Specific Problem**
 - General Problem: There is much user fatigue in deciding what digital recommended content to watch
 
-- Specific Problem: Develop a relational database using the MoviewLens 25M dataset to devleop a robust recommendation engine. This engine will use SQL aggregations to identify "hidden gems" which represent high-rated, low-viewed content, ans well as SVD to predict user-specific preference scores, prioritizing niche content over mainstream hits.
+- Specific Problem: Develop a relational database using the MovieLens 25M dataset to develop a robust recommendation engine. This engine will use SQL aggregations to identify "hidden gems" which represent high-rated, low-viewed content, ans well as SVD to predict user-specific preference scores, prioritizing niche content over mainstream hits.
 
 
 ## Rationale
-There exists a need to solve "popularity bias" which is a prevelant failure in basic algorithms where popular content tends to drown out high-quiality niche content. My refining of this problem allows focus on "hidden gems" by requireing a relation schema that is able to perform sql aggregations before passing the data thorugh a SVD model. I will utilize the strengths of DuckDB for heavy data manipulation and scikit-learn for predictive modeling.
+There exists a need to solve "popularity bias" which is a prevalent failure in basic algorithms where popular content tends to drown out high-quality niche content. My refining of this problem allows focus on "hidden gems" by requiring a relation schema that is able to perform sql aggregations before passing the data thorugh a SVD model. I will utilize the strengths of DuckDB for heavy data manipulation and scikit-learn for predictive modeling.
 
 ## Motivation
 The primary motivation for this project is rooted in a personal passion for high-quality cinema and a recurring frustration with the "paradox of choice" inherent in modern streaming environments. While massive datasets like MovieLens 25M offer a wealth of content, the sheer volume of available titles often leads to decision paralysis, where the discovery of meaningful, niche films is obscured by a bias toward mainstream blockbusters. By leveraging Matrix Factorization and DuckDB, this project seeks to engineer a "Hidden Gems" pipeline that cuts through the noise of over-saturated catalogs. The goal is to move beyond generic popularity metrics and utilize latent feature modeling to identify high-caliber, low-visibility cinema, effectively transforming a overwhelming data surplus into a curated, personalized discovery system.
@@ -42,7 +42,7 @@ The primary motivation for this project is rooted in a personal passion for high
 | **Popularity Bias** | Domain | The tendency for recommendation algorithms to favor mainstream, high-volume content over high-quality but lesser-known titles. | The specific market failure this "Hidden Gem" project is designed to correct. |
 
 
-This project would operate within the domain of information retriveal and consumer analytics, specifically focusing on personalized recommender systems. In the modern attention economy, the primary challenge for digital platforsm is no longer simply storing the content, but efficiently filtering theroguh the massive datasets to lower and mitigate the choice overload of end users.
+This project would operate within the domain of information retrieval and consumer analytics, specifically focusing on personalized recommender systems. In the modern attention economy, the primary challenge for digital platform is no longer simply storing the content, but efficiently filtering theroguh the massive datasets to lower and mitigate the choice overload of end users.
 
 
 | Title | Brief Description | Link to File |
@@ -56,7 +56,7 @@ This project would operate within the domain of information retriveal and consum
 ## Data Creation
 
 ### Data Aquisition: 
-This dataset was constructed using the MovieLens 25M dataset, which is a professional-grade benchark provided hy GroupLens Research from the University of Minnesota. The raw data consists of longitudinal movie rating and tagging activity collected from the time period of the late 1990s through the end of 2019. The data was downloaded through a zip archive from the official GroupLens website. The raw aquisition involevd four specific relational files, including movies.csv, rating.csv, tags.csv, and links.csv. Ingestion these files pipelined into a local DuckDB environment. The provenance of the final dataset involved a filtering step where SQL joins were used to isolate "niche" titles.
+This dataset was constructed using the MovieLens 25M dataset, which is a professional-grade benchmark provided hy GroupLens Research from the University of Minnesota. The raw data consists of longitudinal movie rating and tagging activity collected from the time period of the late 1990s through the end of 2019. The data was downloaded through a zip archive from the official GroupLens website. The raw acquisition involved four specific relational files, including movies.csv, rating.csv, tags.csv, and links.csv. Ingestion these files pipelined into a local DuckDB environment. The provenance of the final dataset involved a filtering step where SQL joins were used to isolate "niche" titles.
 
 
 | File Name | Description | Link to Code |
